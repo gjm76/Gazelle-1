@@ -1,0 +1,42 @@
+/* Details page for all themes*/
+
+.screencap {
+   max-width: 250px;
+   max-height: 140px;
+   cursor: pointer;
+}
+
+.poster {
+   max-width: 210px;
+   max-height: 295px;
+   padding: 0;
+   border-radius: 4px;
+}
+
+.showinfo {
+   margin-left: 5%;
+   width: 90%;
+}
+
+.showinfobox {
+   margin-left: 5%;
+   width: 90%;
+   margin-top: 3px;
+}
+
+.details_banner {
+   max-width: 100%;
+   transition: all .25s ease-in-out;
+   -moz-transition: all .25s ease-in-out;
+   -webkit-transition: all .25s;
+}
+
+.details_banner:hover {
+   max-width: 100%;
+   opacity: 0.75;
+}
+
+.details_banner:active {
+   max-width: 100%;
+   opacity: 0.75;
+}

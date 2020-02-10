@@ -1,0 +1,43 @@
+
+.search {
+ float: right;
+}
+
+.search_follows {
+ width: 90px;
+ height: 22px;
+ color: #fff;
+ cursor: pointer;
+ background: #5A8Bb8;
+ border: none;
+ border-radius: 3px;
+ text-align: center;
+ font-size: 12px;
+ line-height: 12px;
+ margin-right: 2px;
+}
+
+.search_follows:hover {
+ background: #3e6180;
+}
+
+.showmaze {
+ text-align: center;
+ padding-top: 15px;
+ position: relative;
+ height: 50px;
+}
+
+.title {
+ padding-bottom: 2px;
+ float: left;
+ position: absolute;
+ left: 38px;
+ top: -2px; 
+}
+
+.heart {
+ position: absolute;
+ top: 35%;
+ right: 5px;
+}

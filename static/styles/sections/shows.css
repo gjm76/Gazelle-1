@@ -1,0 +1,253 @@
+.head {
+ vertical-align: middle;
+}
+
+.showmaze {
+ margin: 15px 0 8px 0;
+ text-align: center;
+ font-size: 1rem;
+ font-weight: normal;
+ border-radius: 10px;
+ width: 210px;
+ height: 295px;
+}
+
+.showsrating {
+ display:none;
+}
+
+.showmaze:hover + .showsrating,
+.showsrating:hover {
+ display:block;
+ position: absolute;
+ top: 23px;
+ text-align: center;
+ width: 100%;
+ background: rgba(0, 153, 153, 0.5);
+ color: white;
+}
+
+.showswrapper{
+ position: relative;
+ width: 210px;
+ margin: 0 auto;
+}
+
+.rating {
+ overflow: hidden;
+ display: inline-block;
+ font-size: 0;
+ position: relative;
+}
+
+.rating-input {
+ float: right;
+ width: 16px;
+ height: 16px;
+ padding: 0;
+ margin: 0 0 0 -16px;
+ opacity: 0;
+}
+
+.rating-input:checked ~ .rating-star {
+ background-position: 0 0;
+}
+
+.rating-star {
+ position: relative;
+ float: right;
+ display: block;
+ width: 16px;
+ height: 16px;
+ background: url('../../common/shows/rating_star.png') 0 -16px;
+}
+
+.select-box-sort,
+.select-box-format,
+.select-box-genre,
+.select-box-network {
+ display: inline;
+}
+
+.select-box-sort select {
+ min-width: 120px;
+/*  background: gray;*/
+ padding: 2px;
+ font-size: 11px;
+ line-height: 1;
+ border: 0;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ height: 22px;
+ -webkit-appearance: none;
+ padding-right: 26px;
+ /* Remove forced arrow from firefox */
+ -moz-appearance: none;
+ text-indent: 0.01px;
+ text-overflow: '';
+}
+
+.select-box-format select {
+ min-width: 90px;
+/*  background: gray;*/
+ padding: 2px;
+ font-size: 11px;
+ line-height: 1;
+ border: 0;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ height: 22px;
+ -webkit-appearance: none;
+ padding-right: 26px;
+ /* Remove forced arrow from firefox */
+ -moz-appearance: none;
+ text-indent: 0.01px;
+ text-overflow: '';
+}
+
+.select-box-genre select {
+ min-width: 110px;
+/*  background: gray;*/
+ padding: 2px;
+ font-size: 11px;
+ line-height: 1;
+ border: 0;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ height: 22px;
+ -webkit-appearance: none;
+ padding-right: 26px;
+ /* Remove forced arrow from firefox */
+ -moz-appearance: none;
+ text-indent: 0.01px;
+ text-overflow: '';
+}
+
+.select-box-network select {
+ min-width: 140px;
+/*  background: gray;*/
+ padding: 2px;
+ font-size: 11px;
+ line-height: 1;
+ border: 0;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ height: 22px;
+ -webkit-appearance: none;
+ padding-right: 30px;
+ /* Remove forced arrow from firefox */
+ -moz-appearance: none;
+ text-indent: 0.01px;
+ text-overflow: '';
+}
+
+.select-box:after,
+.select-box-sort:after,
+.select-box-format:after,
+.select-box-genre:after,
+.select-box-network:after {
+ font-size: 11px;
+ content: "\25BC";
+ color:black;
+ position: absolute;
+ display:inline-block;
+ width:20px;
+ height:30px;
+ margin-left: -23px;
+ line-height: 30px;
+ pointer-events: none;
+}
+
+input.showshead {
+ background-color: #454545;
+ transition: background-color 300ms ease;
+ padding: 4px;
+ color: #bbb;
+ font-size: 11px;
+ line-height: 1;
+ border: 0;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ height: 22px;
+ cursor: pointer;
+}
+
+.showsheadinput {
+ display: inline-block;
+ float: right;
+ margin: 0;
+}
+
+input.showshead:hover {
+ background-color: gray;
+}
+
+.tooltipster-shows-page {
+ border-radius: 4px; 
+ border: 1px solid #000;
+ background: #4c4c4c;
+ color: #fff;
+}
+
+.tooltipster-shows-page .tooltipster-content {
+ font-family: Arial, sans-serif;
+ font-size: 12px;
+ line-height: 14px;
+ padding: 3px 5px;/*
+ overflow: hidden;
+ display: -webkit-box;
+ height: 47px;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;*/
+}
+
+.showsfoot {
+ display: table;
+ width: 100%;
+}
+
+.showslogo {
+ width: 0.1%;
+ position: relative;
+}
+
+.showslogo > img:hover {
+/* max-width: 52px;
+ max-height: 40px;
+ margin-left: -6px;
+ margin-top: -4px;*/
+ cursor: pointer;
+}
+
+.showsfoot > span,
+.showsfoot > span > img {
+ vertical-align: middle;
+ display: table-cell;
+/*	transition: 200ms ease-in;*/
+}
+
+.showmazenetworklogo {
+ padding: 1px;
+ margin: 1px;
+ max-width: 32px;
+ max-height: 20px; 
+ float: left;
+ border-radius: 3px;
+ background: rgba(90, 101, 101, 0.5);
+ -webkit-transform: scale(1);
+ -moz-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+}
+
+.showmazenetworklogo:hover {
+ -webkit-transform: scale(2);
+ -moz-transform: scale(2);
+ -ms-transform: scale(2);
+ transform: scale(2);
+}

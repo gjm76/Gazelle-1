@@ -1,0 +1,468 @@
+.showswrapper{
+ position: relative;
+ width: 210px;
+ margin: 0 auto;
+}
+
+.rating {
+ overflow: hidden;
+ display: inline-block;
+ font-size: 0;
+ position: relative;
+}
+
+.rating-input {
+ float: right;
+ width: 16px;
+ height: 16px;
+ padding: 0;
+ margin: 0 0 0 -16px;
+ opacity: 0;
+}
+
+.rating-input:checked ~ .rating-star {
+ background-position: 0 0;
+}
+
+.rating-star {
+ position: relative;
+ float: right;
+ display: block;
+ width: 16px;
+ height: 16px;
+ background: url('../../common/shows/rating_star.png') 0 -16px;
+}
+
+.codecs {
+ margin-left: 230px;
+ font-weight: normal;
+}
+
+.icons {
+ bottom: 3px;
+ right: 0;
+ position: absolute;
+ margin: 0px;
+ padding: 2px;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+.showname {
+ font-weight: normal;
+ position: absolute;
+ margin-left: 4px;
+ font-size: 12px;
+ width: 220px;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.showmazenetworklogo {
+ padding: 1px;
+ margin: 1px;
+ max-width: 64px;
+ max-height: 40px; 
+ float: left;
+ border-radius: 3px;
+ background: rgba(90, 101, 101, 0.5);
+ -webkit-transform: scale(1);
+ -moz-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+ cursor: pointer;
+}
+
+.showmazenetworklogo:active {
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -ms-transform: scale(1.1);
+ transform: scale(1.1);
+}
+
+.networklogowrapper {
+ float: right;
+ margin-right: 19px;
+ margin-top: 19px;
+}
+
+.tagssh {
+ width: 449px;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+a.Downloaded {
+ color: #bf5d27;
+ margin-left: 230px;
+ font-weight: normal;
+}
+
+a.Leeching {
+ color: #fb9e3f;
+ margin-left: 230px;
+ font-weight: normal;
+}
+
+a.Seeding {
+ color: #37ad7e;
+ margin-left: 230px;
+ font-weight: normal;
+}
+
+a.Snatched  {
+ color: #e73a27;
+ margin-left: 230px;
+ font-weight: normal;
+}
+
+a.DownloadedHover {
+ color: #bf5d27;
+ font-weight: normal;
+}
+
+a.LeechingHover {
+ color: #fb9e3f;
+ font-weight: normal;
+}
+
+a.SeedingHover {
+ color: #37ad7e;
+ font-weight: normal;
+}
+
+a.SnatchedHover  {
+ color: #e73a27;
+ font-weight: normal;
+}
+
+.season {
+ width:194px;
+ float: left;
+ display:inline;
+}
+
+.episodes {
+ padding: 5px;
+ line-height: 150%;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.main_table {
+ margin: 20px auto;
+ width: 960px;
+ overflow: hidden;
+ position: relative;
+}
+
+.show_title_wrap {
+ padding-top: 1px !important;
+ width: 850px;
+ margin: 0 auto;
+}
+
+.image_wrap {
+ text-align: center;
+ padding:0;
+ margin:0;
+}
+
+.banner {
+ padding:0;
+ margin:0px;
+ border-radius: 4px;
+}
+
+.side_bar {
+ float: right;
+ width: 210px;
+ height: 100%;
+ padding:0;
+ margin:1px;
+}
+
+.poster_box {
+ text-align:center;
+ height:295px;
+}
+
+.synopsis {
+ margin: 1px;
+ float: left;
+ width: 77%;
+}
+
+.main_pad {
+ padding: 0 0 8px 0;
+}
+
+.rating_wrap {
+ text-align:center;
+ padding:2px;
+}
+
+.starRating:not(old) {
+  display        : inline-block;
+  width          : 93%;
+  height         : 1.5em;
+  overflow       : hidden;
+  vertical-align : bottom;
+}
+
+.starRating:not(old) > input {
+  margin-right : -100%;
+  opacity      : 0;
+}
+
+.starRating:not(old) > label {
+  display         : block;
+  float           : right;
+  position        : relative;
+  background      : url('../../common/shows/star-off.svg');
+  background-size : contain;
+}
+
+.starRating:not(old) > label:before {
+  content         : '';
+  display         : block;
+  width           : 1.5em;
+  height          : 1.5em;
+  background      : url('../../common/shows/star-on.svg');
+  background-size : contain;
+  opacity         : 0;
+  transition      : opacity 0.2s linear;
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) > :checked ~ label:before {
+  opacity : 1;
+}
+
+.removeB {
+  width: 50px;
+  height: 12px;
+  color: #fff;
+  cursor: pointer;
+  background: #ab3041;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  margin-left: 12px;
+  vertical-align : middle;
+}
+
+.removeB:hover {
+ background: #812;
+}
+
+.refreshB {
+  width: 50px;
+  height: 12px;
+  color: #fff;
+  cursor: pointer;
+  background: #5A8Bb8;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  margin-left: 12px;
+  vertical-align : middle;
+}
+
+.refreshB:hover {
+ background: #3A6B98;
+}
+
+.ratingTable td {
+ border: none;
+ margin: 0;
+ padding: 0;
+}
+
+.personalRating {
+ background: transparent;
+ text-align: center;
+ border: none;
+ width: 20px;
+ margin: 2px;
+ padding: 0;
+ display: inline;
+ font-family: 'Open Sans',sans-serif;
+ font-size: 9pt;
+}
+
+.votes {
+ background: transparent;
+ text-align: center;
+ border: none;
+ width: 20px;
+ margin: 2px;
+ padding: 0;
+ display: inline;
+ font-family: 'Open Sans',sans-serif;
+ font-size: 9pt;
+}
+
+.votes:hover {
+ cursor: pointer;
+ color: #2c539e;
+}
+
+.ratingWrap {
+ text-align: left;
+ margin-left: 2px;
+ padding: 3px;
+ line-height: 150%;
+}
+
+.submit1 {
+   width: 90px;
+   height: 22px;
+   color: #fff;
+   cursor: pointer;
+   background: #5A8Bb8;
+   border: none;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 12px;
+   line-height: 12px;
+}
+
+.submit1:hover {
+   background: #3e6180;
+}
+
+.submit1:active {
+   background: #8badcd;
+}
+
+.submit2 {
+   width: 90px;
+   height: 22px;
+   color: #fff;
+   cursor: pointer;
+   background: #ab3041;
+   border: none;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 12px;
+   line-height: 12px;
+}
+
+.submit2:hover {
+   background: #812;
+}
+
+.submit2:active {
+   background: #c14b5b;
+}
+
+.edit {
+   width: 90px;
+   height: 22px;
+   color: #fff;
+   cursor: pointer;
+   background: #2e5e4a;
+   border: none;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 12px;
+   line-height: 12px;
+}
+
+.edit:hover {
+ background: #003d3a;
+}
+
+ /* Style the Image Used to Trigger the Modal */
+#fanartbox {
+ display: block;
+ margin: 0 auto 0 auto;
+ height: auto;
+ width: 50%;
+ cursor: pointer;
+ transition: 0.3s;
+}
+
+#fanartbox:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 70%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} 

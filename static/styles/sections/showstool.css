@@ -1,0 +1,27 @@
+
+.absent {
+ float:right;
+ margin-top:5px;
+ display:inline;
+}
+
+.buttonswrap {
+ float:right;
+ margin-top:2px;
+ display:inline;
+}
+
+.show_poster {
+ cursor:hand;
+ padding: 1px;
+ margin: 1px;
+ max-height: 50px;
+ float: center;
+ border-radius: 3px;
+ background: rgba(90, 101, 101, 0.5);
+}
+
+.search {
+ display:inline;
+ float:right;
+}

@@ -1,0 +1,40 @@
+
+.shows {
+ width: 225px;
+ text-align: center;
+ border: none;
+}
+
+.character {
+ float: left;
+ display: block;
+ margin-left: 4px;
+ margin-bottom: 2px;
+ padding-bottom: 2px;
+}
+
+.side_bar {
+ float: left;
+ margin: 0;
+ width: 218px;
+}
+
+.poster_r {
+ border-radius: 4px;
+ max-height: 295px; 
+ max-width: 210px;
+}
+
+.pad_person {
+ margin-left: 224px;
+}
+
+.staff_tools {
+ float:right;
+ margin-right: 4px;
+}
+
+.shows_table {
+ width: auto;
+ border: none;
+}

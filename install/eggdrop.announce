@@ -1,0 +1,30 @@
+# eggdrop port to bind
+set port 51010
+# eggdrop ip to bind
+set host localhost
+
+set serverSocket [socket -server main -myaddr $host $port]
+
+proc main { sock host port } {
+   fconfigure $sock -buffering line
+   fileevent $sock readable [action $sock $host $port]
+}
+
+proc action { sock host port } {
+   putlog "new announce from $sock"
+
+   if {![eof $sock]} {
+      set soc_data [gets $sock]
+      if {$soc_data != ""} {
+         putlog "$soc_data"
+         putquick "PRIVMSG $soc_data"
+         putlog "Closing $sock!"
+         close $sock
+      }
+   } {
+      putlog "EOF for $sock!"
+      close $sock
+   }
+}
+
+putlog "announce.tcl loaded"

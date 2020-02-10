@@ -1,0 +1,107 @@
+.tvschedulenetworklogo {
+ padding: 1px;
+ margin: 1px;
+ max-width: 32px;
+ max-height: 20px; 
+ float: left;
+ border-radius: 3px;
+ background: rgba(90, 101, 101, 0.5);
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+
+.tvschedulenetworklogo:hover {
+ -webkit-transform: scale(2);
+         transform: scale(2);
+}
+
+.tooltipster-tvschedule-page {
+ border-radius: 4px; 
+ border: 1px solid #000;
+ background: #4c4c4c;
+ color: #fff;
+}
+
+.tooltipster-tvschedule-page .tooltipster-content {
+ font-family: Arial, sans-serif;
+ font-size: 12px;
+ line-height: 14px;
+ padding: 3px 5px;/*
+ overflow: hidden;
+ display: -webkit-box;
+ height: 47px;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;*/
+}
+
+.tvschedule td {
+  width: 10px;
+}
+
+.tvschedule td+td {
+  width: auto;
+  text-align: center;
+}
+
+.tvschedule td a {
+ text-decoration: none;
+ font-size: 8pt;
+ font-family: "Open Sans",sans-serif;
+}
+
+.tvschedule td a:hover {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.info {
+ padding: 1px;
+ margin: 1px;
+ max-height: 50px; 
+ float: center;
+ border-radius: 3px;
+ background: rgba(90, 101, 101, 0.5);
+ -webkit-transform: scale(1);
+ transform: scale(1);
+}
+
+.info:hover {
+ -webkit-transform: scale(1.5);	
+ transform: scale(1.5);
+}
+
+.tv-tags{
+ font-size: 8pt;
+ font-style: italic;
+ padding: 1px;
+ margin: 1px;
+ line-height: 1.15;
+}
+
+input.showshead {
+ background-color: #454545;
+ -webkit-transition: background-color 300ms ease;
+ transition: background-color 300ms ease;
+ padding: 4px;
+ color: #bbb;
+ font-size: 11px;
+ line-height: 1;
+ border: 0;
+ border-radius: 4px;
+ height: 22px;
+ cursor: pointer;
+}
+
+input.showshead:hover {
+ background-color: gray;
+}
+
+.nobr {
+ border: 0;
+}
+
+.flags {
+ width: 20px;
+ margin: 0;
+ padding: 0;
+}

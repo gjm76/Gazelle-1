@@ -1,0 +1,757 @@
+body {
+    width: 100%;
+    font-size: 12px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#header, #header_bottom {
+    width: 1000px;
+}
+
+#header {
+    width: 100%;
+    padding: 0;
+}
+
+#header_bottom {
+    color: #FFF; /* Link color for header links */
+    position: absolute;
+    top: 0;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+}
+#footer_bottom {
+    height: 24px;
+    width:100%;
+}
+
+/*
+* - Alerts (Messages) -
+*/
+#alerts {
+    position: fixed;
+    width: 300px;
+    bottom: 20px;
+    right: 70px;
+    z-index: 10;
+}
+.alertbar {
+    min-height: 16px;
+    padding: 10px 5px;
+    background-color: #AF0000; /* Alert Background (red) */
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    border: 1px solid #000; /* Alert Border (black) */
+		border-radius: 5px;
+}
+.bluebar {
+    background-color: #003875; /* Alert Background (blue) */
+    color: #FFF;
+}
+.bluebar a {
+    color: #FFF;
+    padding: 2px 2px;
+} 
+
+.bluebar a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+/* *** */
+
+/*
+* - Stuff on top -
+*/
+#userinfo_major,
+#userinfo_username,
+#userinfo_tools,
+#nav_tools > ul {
+    list-style-type: none;
+    padding: 0;
+}
+#userinfo_major > li {
+    font-size: 0.95em;
+    font-weight: 600;
+    float: left;
+    margin-left: 10px;
+}
+#nav_leeching.stat { /* Don't make these bold */
+    font-weight: 500;
+}
+#major_stats {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#userinfo_username > li {
+    font-size: 0.95em;
+    font-weight: 600;
+    float: left;
+    margin: 0 5px;
+}
+/* *** */
+
+/*
+* - Top-Right Tools Menu -
+*/
+#userinfo_tools > li {
+    float: left; /* Display "Tools, Donate, Edit, Logout" side-by-side */
+    margin-right: 10px;
+}
+#nav_tools:hover > ul {
+    display: block;
+}
+#nav_tools > ul {
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+#nav_tools > ul > li > a {
+    display: block;
+    padding: 10px 5px;
+}
+#nav_tools > ul > li {
+    background: #fff; /* Button background */
+}
+#nav_tools > ul > li:hover {
+    background: #000;  /* Button background when hovered */
+}
+/* *** */
+
+/*
+* - "Nice" Bar (Sitewide Doubleseed, Freeleech timer) -
+*/
+.nicebar { 
+   text-align: center;
+   font-weight: 600;
+   color: #ff0000;
+   position: absolute;
+   bottom:0px;
+   top: 30px;
+   right: 10px;
+   z-index: 9;
+   height: 25px;
+}
+
+/*
+* - Donor Bar -
+*/
+#stats_block {
+    color: white;
+    position: absolute;
+    height: 21px;
+    top: 50px;
+    right: 25px;
+}
+
+#active_drive .donortext {
+    display: block;
+    height: 15px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #000; /* Donor text color */
+    top: 0px;
+    padding: 0 21px;
+    position: relative;
+    z-index: 2;
+}
+
+#active_drive .donorbar {
+    height: 15px;
+    position: relative;
+    padding: 0px;
+    background: #555; /* Donor background color (gray) */
+}
+
+#active_drive .donorpercent {
+    display: block;
+    height: 100%;
+    top: -15px;
+    background-color: rgb(43,194,83); /* Donor fill color (green) */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+/* *** */
+
+/*
+* - Main Dropdown -
+*/
+nav#mainnav {
+    top: 95px;
+    width: 1000px;
+    position: absolute;
+}
+nav#mainnav ul ul {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+    z-index: 99999;
+}
+nav#mainnav ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+nav#mainnav ul {
+    background:#000; /* Background Color */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-table;
+}
+nav#mainnav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+nav#mainnav ul li {
+    width: 125px;
+    float: left;
+    margin: 0;
+}
+nav#mainnav ul li:hover {
+    background: #FFF; /* Hover Color */
+}
+nav#mainnav ul li:hover a {
+    color: #FFF; /* Text Color Hovered */
+}
+nav#mainnav ul li a {
+    display: block;
+    padding: 10px;
+    color: #FFF; /* Text Color */
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #111;
+    text-decoration: none;
+}
+nav#mainnav ul ul {
+    background:#000; /* Background Color */
+    padding: 0;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+}
+nav#mainnav ul ul li {
+    float: none;
+    position: relative;
+}
+nav#mainnav ul ul li a {
+    color: #fff; /* Text Color */
+}
+nav#mainnav ul ul li a:hover { 
+    background:#FFF; /* Hover Color */
+}
+nav#mainnav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top:0;
+}
+nav#mainnav ul li ul li a {
+    text-align: left;
+}
+/* *** */
+
+/*
+* - Messagebars used for form validation -
+*/
+.messagecontainer {
+    margin: 0 auto 10px auto;
+}
+.messagebar {  
+    padding-top: 3px; 
+    height: 16px;
+    background-color: #1a1;  /* Green */
+    font-weight: 600;
+    color: #FFF;
+    white-space: nowrap;
+}
+/* Messagebar Error (Red) */
+.messagebar.alert {
+    background-color: #e11;
+}
+/* Messagebar In-progress */
+.messagebar.checking { 
+    background-color: #FFF; 
+    color: #000;
+}
+/* *** */
+
+/*
+* - Page layouts -
+*/
+.thin {
+    width: 96%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.contact_link {
+    display: inline;
+    padding: 5px;
+    margin: 0 20px 0 10px;
+    font-weight: bold;
+    background-color: #d00;
+    border: 1px solid #005488;
+    border-radius: 6px;       /* FF9+ IE9+ */
+    -moz-border-radius: 6px; /* for FF5 */
+    -webkit-border-radius: 6px; /* for opera */
+}
+a.contact_link {
+    color: white;
+    text-decoration: underline;
+}
+a.contact_link:hover {
+    text-decoration: none;
+}
+.medium { 
+    text-align: left;
+    width: 86%;
+}
+.long {  
+    text-align: left;
+    width: 99%;
+}
+/* *** */
+
+/*
+* - Panels used basically everywhere -
+*/
+.head {
+    height: 30px;
+    padding: 16px 0 0 10px;
+    border: 1px solid #000;
+    background-color: #3C3C3C;
+    font-weight: 600;
+    padding: 3px 10px;
+    line-height: 30px;
+}
+.box h2 {
+    padding: 3px 40px;
+    font-size: 14px;
+    border-radius: 14px; 
+    -moz-border-radius: 14px; 
+    -webkit-border-radius: 14px;
+}
+.box {
+    /* border: 1px solid #2B2D30;*/
+    background-color: transparent;
+}
+.body {
+    padding: 3px 10px 10px 10px; 
+}
+.pad {
+    padding: 1em;
+    color: #E1E1E1;
+}
+.pad h3, .pad h4, .padbox h3, .padbox h4 {
+    margin-top: 0;
+    padding-top: 0;
+}
+/* what is this */
+.sidebar .box {
+    margin: 0 5px 10px 5px;
+}
+.thin .box {
+    margin: 0 auto 0;
+}
+
+.details .box {
+    margin: 0;
+}
+.main_column .box, .main_column table {
+    margin-bottom: 20px;
+}
+#search_box .box.pad {
+    margin-bottom:0;
+}
+/* *** */
+
+/*
+* - Searchbars -
+*/
+#searchbars {
+    position: relative;
+    margin: 0 auto;
+    top: 16px;
+    left: 69px;
+}
+#searchbars ul li {
+    float: left;
+    list-style-type: none;
+}
+#searchbars input {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    margin: 0 2px;
+}
+/* *** */
+
+/*
+* - Modbar -
+*/
+#modbar {
+    text-align: center;
+    background-color: transparent;
+}
+
+/* *** */
+
+/*
+* - Details(Torrent) page -
+* ![Fix all this shit]
+*/
+#top_info {
+    display:inline-table;
+    margin:16px auto 16px;
+    border: 1px solid #2B2D30;
+    padding:0 6px 0 12px;
+    background: transparent; 
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+table.boxstat { 
+    border:none;
+}
+
+table.boxstat td { 
+    padding: 4px 6px;
+    border-top:none;
+    border-right: none;
+    border-left:1px solid #2B2D30;
+    border-bottom:none;
+    background: transparent; 
+    text-align:center;
+}
+
+table.boxstat td:first-child { 
+    border-left:none;
+}
+.boxstat img {
+    vertical-align:middle;
+    text-align:center;
+}
+
+#user_message .button {
+    margin: 0 0 8px 8px;
+    padding: 4px 12px;
+    vertical-align: middle;
+}
+
+.details {
+    width: 96%;
+    min-width: 920px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.details div.linkbox {
+    text-align:center;
+    padding: 0;
+    margin: 0;    /* 12px 0 1px 0; */
+}
+
+.details .sidebar, #requests .sidebar {
+    width: 260px;
+}
+
+.details .middle_column, #requests .middle_column {
+    margin: 0 270px 10px 0;
+}
+
+.middle_column table {
+    margin-bottom: 20px;
+}
+
+.middle_column .torrent_table {
+    margin-top: 0;
+}
+
+.details .main_column, #requests .main_column {
+    margin: 0 0 10px 0;
+}
+
+.details .tag_add {
+    border-top: 1px solid #98AAB1;
+    padding: 2px 10px 2px 10px;
+}
+
+/* Icons on torrents page */
+#staff_tools, #warning_status {
+    margin-bottom: 15px;
+}
+.icon {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-left: 4px;
+}
+
+#staff_tools .icon, .torrent .icon {
+    width:20px;
+    height:20px;
+    margin-top: -2px;
+    -moz-background-size: 16px 16px;
+    -o-background-size:16px 16px;
+    -webkit-background-size:16px 16px;
+    background-size: 16px 16px;
+}
+
+#staff_tools td {
+    padding: 5px 5px;
+}
+/* *** */
+
+/*
+* - Forums page -
+*/
+
+#user_dropdown {
+    display:inline;
+    position: relative;
+    white-space:nowrap;
+}
+
+#user_dropdown ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    left: -8px;
+    top: 1.3em;
+    z-index: 10;
+}
+
+#user_dropdown:hover ul {
+    display: block; 
+}
+
+#user_dropdown ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#user_dropdown ul a {
+    display: block; 
+}
+
+#user_dropdown ul li a {
+	margin: 0; 
+    text-align: left;
+    padding: 1px 8px 1px 8px;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+#user_dropdown ul li a:hover {
+    text-decoration: none;
+}
+
+td.postbody {
+    width: 800px;
+}
+.post_container {
+    width: inherit;
+}
+
+/* *** */
+
+/*
+* - User Classes, Ranks, Names (Shows in forum, help desk etc) -
+*/
+.rank {
+    font-weight: 700;
+}
+.user_name { 
+    font-weight: 400;
+    padding: 1px 8px;
+    margin: 0;
+    color: #C2C2C2;
+}
+span.user_name a { 
+    color: #8C2020;
+    font-weight: 700;
+}
+span.user_name a:hover { 
+    color: #fff;
+}
+/* *** */
+
+/* Ratio Colors */
+.r00 { color: #FF0000; }
+.r01 { color: #FF1300; }
+.r02 { color: #FF1300; }
+.r03 { color: #FF2600; }
+.r04 { color: #FF4C00; }
+.r05 { color: #FF5E00; }
+.r06 { color: #FF5E00; }
+.r07 { color: #FF7100; }
+.r08 { color: #FF9700; }
+.r09 { color: #FFAA00; }
+.r10 { color: #74C42E; }
+.r20 { color: #41bB00; }
+.r50 { color: #41dB00; }
+.r99 { color: #41eB00; }
+
+/* Styles generated by the BBCode parser */
+
+.size0 { font-size:0.75em; }
+.size1 { font-size:1em; }
+.size2 { font-size:1.25em; }
+.size3 { font-size:1.5em; }
+.size4 { font-size:1.75em; }
+.size5 { font-size:2em; }
+.size6 { font-size:2.25em; }
+.size7 { font-size:2.5em; }
+.size8 { font-size:2.75em; }
+.size9 { font-size:3em; }
+.size10 { font-size:3.25em; }
+
+code.bbcode {
+    display:inline-block;
+    padding: 2px 4px;
+    background-color: #fbe5e1;
+    color: #c0341d;
+    overflow-y: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+    border: 1px solid #98AAB1;
+    border-radius: 4px;
+}
+
+code.bbcodeblock {
+    display: block;
+    color: #c0341d;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fbe5e1;
+    border: 1px dashed #98AAB1;
+    border-radius: 4px;
+}
+
+/*
+* - Helpers -
+*/
+.hide {
+    display:none;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+}
+
+input.hidden {
+    position: absolute;
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.small {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.min_padding {
+    padding: 0;
+    margin: 0 0;
+}
+
+p.min_padding {
+    margin: 2px 0;
+}
+
+.vertical_space {
+    margin-bottom: 10px;
+}
+
+/* Classes added when trying to show something */
+.highlight {
+    font-weight: 700;
+    /* Maybe add a color too? */
+}
+.normal {
+    font-weight: 400; 
+}
+.bold {
+    font-weight: 700;
+}
+/* * */
+
+/* Some Button colors */
+.greenButton {
+    background: #5da53a;
+}
+
+.greenButton:hover {
+    background: #48802d;
+}
+
+.blueButton {
+    background: #1f9db4;
+}
+
+.blueButton:hover {
+    background: #187b8c;
+}
+
+.redButton {
+    background: #ab3041;
+}
+
+.redButton:hover {
+    background: #812;
+}
+
+.infoButton {
+    background: #5A8Bb8;    /* #024a7c;#BACBD8 #9AaBb8 */
+}
+
+.infoButton:hover {
+    background: #3A6B98;  
+}
+
+.orangeButton {
+    background: #ff7f26;
+}
+
+.orangeButton:hover {
+    background: #d96d21;
+}
+/* * */
+
+.wid35 {
+    width: 35%;
+}
