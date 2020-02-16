@@ -698,7 +698,7 @@ $Bookmarks = all_bookmarks('torrent');
         <td width="100%">Details</td>
         <td><a href="<?= header_link('size') ?>">Size</a></td>
         <td><a href="<?= header_link('time') ?>">Time</a></td>
-		<td class="sign"><a href="<?= header_link('snatched') ?>"><img src="static/styles/themes/<?= $LoggedUser['StyleName'] ?>/images/snatched.svg" title="Sxxnatches" alt="↺" /></a></td>
+		<td class="sign"><a href="<?= header_link('snatched') ?>"><img src="static/styles/themes/<?= $LoggedUser['StyleName'] ?>/images/snatched.svg" title="Snatches" alt="↺" /></a></td>
 		<td class="sign"><a href="<?= header_link('seeders') ?>"><img src="static/styles/themes/<?= $LoggedUser['StyleName'] ?>/images/seeders.svg" title="Seeders" alt="∧" /></a></td>
         <td class="sign"><a href="<?= header_link('leechers') ?>"><img src="static/styles/themes/<?= $LoggedUser['StyleName'] ?>/images/leechers.svg" title="Leechers" alt="∨" /></a></td>
         <?php /*<td><a href="<?= header_link('size') ?>">Size</a></td>
